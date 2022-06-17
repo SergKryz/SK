@@ -1,0 +1,33 @@
+<!-- include header -->
+<%- include('include/_header') %>
+<!-- /include header -->
+   <div class="text-center center-div" id="login">
+        <div class="container w-25 border py-5">
+            <div class="title">
+                <h2 class="font-weight-bold"> LOGIN SYSTEM</h2>
+                <span>REGISTRATION  FORM</span>
+            </div>
+            <form action="/users/register" method="post">
+                <div class="form-group">
+                  <small><label for="email" class="form-text text-muted text-left">Enter email address</label></small>
+                  
+                    <input type="email" class="form-control" placeholder="email" required name="email">
+                    
+                </div>
+                <div class="from-group">
+                   <small>  <label for="password" class="form-text text-muted text-left">Enter password</label></small>
+                    <input type="password" class="form-control"  placeholder="password" required name="password">
+                    
+                </div>
+                
+                <button type="submit" class= "btn btn-success rounded-pill">Submit</button>
+            </form>
+            <a href="/"> Already a member - press here to login         
+            </a>
+        </div>
+   </div>
+<!-- include footer -->
+<%- include('include/_footer') %>
+<!-- /include footer -->
+
+
